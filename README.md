@@ -1,6 +1,6 @@
-# scalaplot
+# scalaplotlib
 
-Scalaplot is a small, type-oriented library for creating plots. It wraps [JFreeChart](http://www.jfree.org/jfreechart/)
+ScalaPlotLib is a small, type-oriented library for creating plots. It wraps [JFreeChart](http://www.jfree.org/jfreechart/)
 in a (hopefully) nice API. It's intended for easily creating decent plots in REPL and notebook environments, and
 supports [Apache Spark](https://spark.apache.org) out-of-the-box (don't worry - it's a `provided` dependency, so if you
 don't use it, it won't affect you!)

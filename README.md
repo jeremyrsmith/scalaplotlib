@@ -8,20 +8,21 @@ don't use it, it won't affect you!)
 Here's a quick example to give you an idea of how it's used:
 
 ```scala
-Chart("Stacked Bar", StackedBar)
-  .dataPoints(
-    ("Foo", 10.0, 12.0, 13.0, 14.0),
-    ("Bar", 20.0, 12.0, 13.0, 14.0))
-  .domain("Wizzle", Categories)(_._1)
-  .rangeAxis("Amount")
-  .range("A")(_._2)
-  .range("B")(_._3)
-  .range("C")(_._4)
-  .range("D")(_._5)
+// some fake data
+private val data = Stream.iterate((0, 0.0, 0.0)) {
+  case (x, y1, y2) => (x + 1, y1 + nextGaussian(), y2 + nextGaussian())
+}.take(100).toSeq
+
+Chart("Line", Line)
+  .data(data)
+  .domain("X")(_._1)
+  .rangeAxis("Y")
+  .range("Y1")(_._2)
+  .range("Y2")(_._3)
   .show()
 ```
 
-![Stacked Bar output](examples/stacked-bar.svg)
+![Line chart output](examples/line.svg)
 
 There is a [whole page of examples](examples/), and documentation is forthcoming!
 

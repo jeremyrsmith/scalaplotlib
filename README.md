@@ -26,16 +26,16 @@ Chart("Stacked Bar", StackedBar)
 There is a [whole page of examples](examples/), and documentation is forthcoming!
 
 ## TODO
-[ ] Documentation!
-[ ] Publish to Sonatype
-[ ] More plots (some of these will be easy, others won't)
-    [ ] Time series, Gantt, and waterfall plots (using `Date` and `java.time._` domains)
-    [ ] Pie charts (I never use them, but it's obligatory!)
-    [ ] 3D surface plots (not supported by JFreeChart, but we can add it here!)
-    [ ] Bubble charts
-    [ ] Density plots (density blocks are supported by JFC, but we can add better ones even)
-    [ ] Candlestick / OLHC
-[ ] Better stat plot API / aggregation API
+- [ ] Documentation!
+- [ ] Publish to Sonatype
+- [ ] More plots (some of these will be easy, others won't)
+  - [ ] Time series, Gantt, and waterfall plots (using `Date` and `java.time._` domains)
+  - [ ] Pie charts (I never use them, but it's obligatory!)
+  - [ ] 3D surface plots (not supported by JFreeChart, but we can add it here!)
+  - [ ] Bubble charts
+  - [ ] Density plots (density blocks are supported by JFC, but we can add better ones even)
+  - [ ] Candlestick / OLHC
+- [ ] Better stat plot API / aggregation API
 
 ## See Also
 
